@@ -17,6 +17,17 @@ for(let i = 0; i < shoppingList.length; i++){
 */
 
 // ? WHILE VERSION
+//dichiarare la variabile 'i' fuori dal ciclo
+let i = 0;
+
+while(i < shoppingList.length){
+    //dichiarare una variabile per ogni elemento della lista
+
+    listItem += `<li>${shoppingList[i]}</li>`;
+
+    //incrementare l'indice ad ogni giro
+    i++;
+}
 
 //5. stampo in pagina
 list.innerHTML = listItem;
